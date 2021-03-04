@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import MenuIcon from '@material-ui/icons/Menu';
-import myLogo from '../../images/Logo White.png';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements.js';
+import Logo from '../Logo';
+import {Nav, NavLogoContainer, MobileIcon, NavMenu, NavItems, NavLinks} from './NavbarElements.js';
 import {animateScroll as scroll} from 'react-scroll';
 
 const Navbar = ({toggle}) => {
     const[scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
-        if(window.scrollY >= 80) {
+        if(window.scrollY >= 60) {
             setScrollNav(true)
         } else {
             setScrollNav(false)
@@ -24,34 +24,33 @@ const Navbar = ({toggle}) => {
     }
     return (
         <>
-            <Nav scrollNav={scrollNav}>
-                <NavbarContainer>
-                    <NavLogo to="/" onClick={toggleHome}><img src={myLogo} height='50px' alt='NLV logo'/></NavLogo>
+             <Nav scrollNav={scrollNav}>
+                    <NavLogoContainer to="/" onClick={toggleHome}>
+                        <Logo inline/>
+                    </NavLogoContainer>
                     <MobileIcon onClick={toggle}>
                         <MenuIcon />
                     </MobileIcon>
                     <NavMenu>
-                        <NavItem>
+                        <NavItems>
                             <NavLinks to="about"
                             smooth={true} duration={500} spy={true}
-                            exact='true' offset={-80} activeClass="active"
+                            exact='true' offset={-60} activeClass="active"
                             >About</NavLinks>
-                        </NavItem>
-                        <NavItem>
+                        </NavItems>
+                        <NavItems>
                             <NavLinks to="portfolio"
                             smooth={true} duration={500} spy={true}
-                            exact='true' offset={-80}
+                            exact='true' offset={-60}
                             >Portfolio</NavLinks>
-                        </NavItem>
-                        <NavItem>
+                        </NavItems>
+                        <NavItems>
                             <NavLinks to="contact"
                             smooth={true} duration={500} spy={true}
-                            exact='true' offset={-80}
+                            exact='true' offset={-60}
                             >Contact</NavLinks>
-                        </NavItem>
-                    </NavMenu>
-                    
-                </NavbarContainer>
+                        </NavItems>
+                    </NavMenu>                    
             </Nav>
         </>
     );

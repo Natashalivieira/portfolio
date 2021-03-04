@@ -5,14 +5,14 @@ export const InfoContainer = styled.div`
     background: ${({lightBg}) => (lightBg ? '#fff' : '#000')};
 
     @media screen and (max-width: 768px) {
-        padding: 100px 0;
+        padding: 100px 0 300px 0;
     }
 `;
 
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 800px;
+    height: 600px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;

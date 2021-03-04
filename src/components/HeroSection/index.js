@@ -1,35 +1,24 @@
 import React, {useState} from 'react';
-import {HeroContainer, HeroBg, HeroContent, HeroTitle, HeroText, HeroButtonWrapper} from './HeroSectionElements';
-import { Button } from '../ButtonElement';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import {HeroContainer, HeroBgFade, HeroTitle, HeroText, HeroButtonWrapper} from './HeroSectionElements';
+import Margin from '../Margin';
+import {DownArrow} from '../DownArrow';
 
 const HeroSection = () => {
-    const [hover, setHover] = useState(false);
-
-    const onHover = () => {
-        setHover(!hover)
-    }
 
     return (
         <HeroContainer id={'home'}>
-            <HeroBg/>
-            <HeroContent>
+            <HeroBgFade>
+                <Margin direction="vertical" margin="19em" />
                 <HeroTitle>Natasha Li Vieira</HeroTitle>
+                <Margin direction="vertical" margin="1em" />
                 <HeroText>My work is your best solution</HeroText>
+                <Margin direction="vertical" margin="1em" />
                 <HeroButtonWrapper>
-                    <Button 
-                    to="about" 
-                    onMouseEnter={onHover} 
-                    onMouseLeave={onHover}
-                    primary='true'
-                    dark='true'
-                    smooth={true} duration={500} spy={true}
-                    exact='true' offset={-80} activeClass="active"
-                    >
-                    <ExpandMoreIcon/> 
-                    </Button>
+                    <DownArrow 
+                        
+                    />
                 </HeroButtonWrapper>
-            </HeroContent>
+            </HeroBgFade>
         </HeroContainer>
     );
 };
