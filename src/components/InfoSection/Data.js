@@ -1,5 +1,3 @@
-import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-
 export const aboutObj = {
     id: 'about',
     lightBg: true,
@@ -13,9 +11,10 @@ export const aboutObj = {
     alt: 'About',
     darkText: true,
     button: 'contact',
-    buttonDesc: 'Reach me out',
+    buttonDesc: 'See my work',
     dark: false,
     primary: false,
+    big: true,
 }
 
 export const portfolioObj = {
@@ -31,9 +30,10 @@ export const portfolioObj = {
     alt: 'portfolio',
     darkText: false,
     button: 'myportfolio',
-    buttonDesc: 'See my portfolio',
+    buttonDesc: 'Check my portfolio',
     dark: true,
     primary: true,
+    big: true,
 }
 
 export const contactObj = {
@@ -48,6 +48,7 @@ export const contactObj = {
     img: require('../../images/undraw_things_to_say_ewwb.svg').default,
     alt: 'contact',
     darkText: true,
-    button: 'home',
-    buttonDesc: <ExpandLessIcon/>,
+    button: 'about',
+    buttonDesc: 'Get to know me',
+    big: true,
 }

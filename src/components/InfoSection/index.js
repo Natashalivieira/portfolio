@@ -13,10 +13,10 @@ import {
     ImgWrap, 
     Img,
     } from './InfoSectionElements';
-import { Button } from '../ButtonElement';
+import { Button } from '../Button';
 
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, dark, primary, description, img, alt, buttonDesc, button}) => {
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, dark, primary, big, description, img, alt, buttonDesc, button}) => {
     const [hover, setHover] = useState(false);
     
     const onHover = () => {
@@ -40,8 +40,9 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkT
                                 onMouseLeave={onHover}
                                 primary={primary}
                                 dark={dark}
+                                big={big}
                                 smooth={true} duration={500} spy={true}
-                                exact='true' offset={-80} activeClass="active"
+                                exact='true' offset={-60} activeClass="active"
                                 >
                                 {buttonDesc}
                                 </Button>

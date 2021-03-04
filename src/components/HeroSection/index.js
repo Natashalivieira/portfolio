@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {HeroContainer, HeroBgFade, HeroTitle, HeroText, HeroButtonWrapper} from './HeroSectionElements';
 import Margin from '../Margin';
 import {DownArrow} from '../DownArrow';

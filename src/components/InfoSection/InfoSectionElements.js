@@ -73,14 +73,12 @@ export const Header = styled.h1`
 
 export const Subtitle = styled.p`
     max-width: 440px;
-    margin-bottom: 5px;
     font-size: 18px;
     line-height: 24px;
     color: ${({darkText}) => (darkText ? '#000' : '#fff')};
 `;
 
 export const ButtonWrapper = styled.div`
-    margin-top: 8px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
