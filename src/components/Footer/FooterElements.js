@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterWrap = styled.div`
-    padding: 48px 24px;
+    padding: 30px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,15 +33,12 @@ export const PlatformsWrap = styled.div`
 `;
 
 export const PlatformLogo = styled(Link)`
-    color: #fff;
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1.5rem;
     display: flex;
     align-items: center;
     margin-bottom: 16px;
-    font-weight: bold;
 `;
 
 export const WebsiteRights = styled.small`

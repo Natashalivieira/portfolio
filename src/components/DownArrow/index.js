@@ -7,7 +7,7 @@ const DownArrowContainer = styled.div`
     width: 46px;
     height: 46px;
     border-radius: 50%;
-    background-color: rgba(113, 113, 113, 0.48);
+    background-color: rgba(100, 100, 100, 0.50);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ const DownArrowContainer = styled.div`
     }
 `;
 
-const IconContainer = styled(Link)`
+const IconContainer = styled.div`
     margin-top: 3px;
     color: #fff;
     font-size: 30px;
@@ -29,9 +29,7 @@ const IconContainer = styled(Link)`
 export function DownArrow() {
     return (
     <DownArrowContainer>
-        <IconContainer to="about" 
-                        smooth={true} duration={500} spy={true}
-                        exact='true' offset={-60} activeClass="active">
+        <IconContainer>
             <ExpandMoreIcon/>
         </IconContainer>
     </DownArrowContainer>

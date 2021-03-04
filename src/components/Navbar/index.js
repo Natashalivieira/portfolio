@@ -33,22 +33,41 @@ const Navbar = ({toggle}) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItems>
-                            <NavLinks to="about"
-                            smooth={true} duration={500} spy={true}
-                            exact='true' offset={-60} activeClass="active"
-                            >About</NavLinks>
+                            <NavLinks 
+                            to="about"
+                            smooth={true} 
+                            duration={1500} 
+                            spy={true}
+                            exact='true' 
+                            offset={-60} 
+                            activeClass="active"
+                            >
+                                About
+                            </NavLinks>
                         </NavItems>
                         <NavItems>
-                            <NavLinks to="portfolio"
-                            smooth={true} duration={500} spy={true}
-                            exact='true' offset={-60}
-                            >Portfolio</NavLinks>
+                            <NavLinks 
+                            to="portfolio"
+                            smooth={true} 
+                            duration={1500} 
+                            spy={true}
+                            exact='true' 
+                            offset={-60}
+                            >
+                                Portfolio
+                            </NavLinks>
                         </NavItems>
                         <NavItems>
-                            <NavLinks to="contact"
-                            smooth={true} duration={500} spy={true}
-                            exact='true' offset={-60}
-                            >Contact</NavLinks>
+                            <NavLinks 
+                            to="contact"
+                            smooth={true} 
+                            duration={1500} 
+                            spy={true}
+                            exact='true' 
+                            offset={-60}
+                            >
+                                Contact
+                            </NavLinks>
                         </NavItems>
                     </NavMenu>                    
             </Nav>

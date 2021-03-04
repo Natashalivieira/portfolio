@@ -11,7 +11,7 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroBgFade = styled.div`
-    background-color: rgba(53, 53, 53, 0.88);
+    background-color: rgba(55, 55, 55, 0.70);
     width: 100%;
     height: 100%;
     display: flex;

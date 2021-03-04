@@ -10,7 +10,7 @@ export const aboutObj = {
     img: require('../../images/undraw_both_sides_hbv3.svg').default,
     alt: 'About',
     darkText: true,
-    button: 'contact',
+    button: 'portfolio',
     buttonDesc: 'See my work',
     dark: false,
     primary: false,

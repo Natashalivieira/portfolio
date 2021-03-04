@@ -1,6 +1,6 @@
 import React from 'react';
 import { FooterContainer, FooterWrap, Platforms, PlatformsWrap, PlatformLogo, WebsiteRights, PlatformIcons, PlatformIconLink} from './FooterElements';
-import myLogo from '../../images/Logo White.png';
+import Logo from '../Logo';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -17,7 +17,7 @@ const Footer = () => {
                     <Platforms>
                         <PlatformsWrap>
                             <PlatformLogo to='/' onClick={toggleHome}>
-                                <img src={myLogo} height='50px' alt='NLV Logo'/>
+                                <Logo/>
                             </PlatformLogo>
                             <WebsiteRights>Natasha Li Vieira © {new Date().getFullYear()} All rights reserved</WebsiteRights>
                             <PlatformIcons>
