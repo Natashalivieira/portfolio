@@ -5,7 +5,7 @@ export const aboutObj = {
     lightTextDesc: false,
     topLine: 'Aka unicorn employee',
     headLine: 'A complete professional',
-    description: 'Industrial Mechanics Technician, Materials Engineer, selft-taught Developer & Designer. Methodic problem-solver, empath team-player, intelligent creator. Versatile and self-driven.',
+    description: 'Industrial Mechanics Technician, Materials Engineer, selft-taught Developer & Designer. Methodic problem-solver, empathetic team-player, intelligent creator. Versatile and self-driven.',
     imgStart: true,
     img: require('../../images/undraw_both_sides_hbv3.svg').default,
     alt: 'About',

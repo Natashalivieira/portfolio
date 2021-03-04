@@ -6,7 +6,7 @@ export const MyPortfolioContainer = styled.div`
     justify-content: center;
     align-items: center;
     position: center;
-    height: 800px;
+    height: 600px;
     color: #fff;
     z-index: 1;
 `;

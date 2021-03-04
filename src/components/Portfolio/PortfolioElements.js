@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+import {theme} from '../../theme';
+
 export const PortfolioContainer = styled.div`
-    height: 800px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,11 +11,11 @@ export const PortfolioContainer = styled.div`
     background: #9D9AF3;
 
     @media screen and (max-width: 768px) {
-        height: 1100px;
+        height: 900px;
     }
 
     @media screen and (max-width: 480px) {
-        height: 1300px;
+        height: 1000px;
     }
 `;
 
@@ -38,6 +40,7 @@ export const PortfolioWrapper = styled.div`
 
 export const PortfolioCard = styled(Link)`
     background: #fff;
+    color: #000;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -53,6 +56,10 @@ export const PortfolioCard = styled(Link)`
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
+    }
+
+    &:active{
+        color: ${theme.mycolor};
     }
 `;
 

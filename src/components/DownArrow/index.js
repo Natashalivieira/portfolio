@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import {Link} from 'react-scroll';
 
 const DownArrowContainer = styled.div`
     width: 46px;
